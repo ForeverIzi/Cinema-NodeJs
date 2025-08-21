@@ -1,6 +1,8 @@
 # Cinema Ticketing App
 
-This project is a **cinema ticketing app** built with **Node.js**, **JavaScript**, and **MongoDB**.  
+This project is a **cinema ticketing app** built with **Node.js**, **JavaScript**, and **MongoDB**. 
+
+It's an evolution of **"Ticket.JS"**, where I built a super simple cinema ticket app with JavaScript. Now, I'll try to use my full knowledge.
 
 Currently, only the CRUD to manage movies is work, but in the future it will expand to include **employees, clients, ticket purchases, discount coupons**, and a **full cinema ticketing system**.
 
