@@ -1,15 +1,14 @@
-// src/config/db.js
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-dotenv.config();  // carrega o .env
+dotenv.config();  
 
 const connectDB = async () => {
   try {
-    const uri = process.env.MONGO_URI;  // pega a URI do .env
+    const uri = process.env.MONGO_URI;
     if (!uri) throw new Error("MONGO_URI não definida no .env");
 
-    await mongoose.connect(uri);  // conecta
+    await mongoose.connect(uri);
     console.log("✅ MongoDB conectado!");
   } catch (err) {
     console.error("❌ Erro ao conectar ao MongoDB:", err.message);
