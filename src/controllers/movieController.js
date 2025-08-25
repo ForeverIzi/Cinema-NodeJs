@@ -12,7 +12,7 @@ export const getAllMovies = async(req, res) => {
 export const getMovieById = async(req, res) => {
     try {
         const { id } = req.params;
-        const movieDoc = await movie.findById(id);
+        const movieDoc = await movie.findById(id).select("-password");
 
         if (!movieDoc) {
             return res.status(404).json({message:"Filme não encontrado"});
@@ -24,7 +24,7 @@ export const getMovieById = async(req, res) => {
     };
 };
 
-export const addMovie = async(req, res) => {
+export const createMovie = async(req, res) => {
     try {
         const createMovie = new movie(req.body);
         await createMovie.save();
