@@ -21,6 +21,7 @@ It's an evolution of **"Ticket.JS"**, where I built a super simple cinema ticket
 - Script for inserting users
 - Database running on **localhost** 
   - OBS: Initially planned for MongoDB Atlas, but i'm using local setup due to network issues.
+- Starting to develop the cinema sessions and reserved seats logic.
 
 ## Future Features
 
